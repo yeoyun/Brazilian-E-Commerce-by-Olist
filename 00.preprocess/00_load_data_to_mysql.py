@@ -22,9 +22,9 @@ file_map = {
     #'olist_products_dataset.csv': 'olist_products_raw',
     #'product_category_name_translation.csv': 'product_category_name_translation_raw',
     #'olist_sellers_dataset.csv': 'olist_sellers_raw',
-    'olist_geolocation_dataset.csv': 'olist_geolocation_raw',
+    #'olist_geolocation_dataset.csv': 'olist_geolocation_raw',
     #'olist_marketing_qualified_leads_dataset.csv': 'olist_marketing_qualified_leads_raw',
-    #'olist_closed_deals_dataset.csv': 'olist_closed_deals_raw'
+    'olist_closed_deals_dataset.csv': 'olist_closed_deals_raw'
 }
 
 # 상대 경로
