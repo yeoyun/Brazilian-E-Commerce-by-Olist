@@ -1,0 +1,682 @@
+[
+  {
+    "id": "chart-01",
+    "title": "📈 Recency 기반 RFM 가중치 효과 분석",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/동적RFM.ipynb",
+    "cell": 23,
+    "output": 0,
+    "types": [
+      "bar",
+      "box",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "af49f3f95e0d65789fe15ca2a1998e4eb0069debbddc2f4152511cb70da1d4f0"
+  },
+  {
+    "id": "chart-02",
+    "title": "전략별 고객 수 분포 (Bar Plot)",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/동적RFM.ipynb",
+    "cell": 25,
+    "output": 0,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "a5e4dc35c05346ea23ac64cffa3eccb31d8c3f2d50786ac8705b380d94d81453"
+  },
+  {
+    "id": "chart-03",
+    "title": "전략별 고객 수 분포 (Treemap)",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/동적RFM.ipynb",
+    "cell": 26,
+    "output": 0,
+    "types": [
+      "treemap"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "c04cdcc9a99e4c4238290153731dbc65145ac25f4479b8a9061b87455cd969a0"
+  },
+  {
+    "id": "rfm-3d",
+    "title": "RFM 고객 군집 3D",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/클러스터링.ipynb",
+    "cell": 8,
+    "output": 0,
+    "types": [
+      "scatter3d"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "d58e71858b8384bc7e05b8195acbe929b99178d00f9ed38b0052c1d706482faa"
+  },
+  {
+    "id": "chart-05",
+    "title": "All Clusters: Category Performance Overview",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/행동인사이트.ipynb",
+    "cell": 14,
+    "output": 0,
+    "types": [
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "fea682e3ba9766c95f275df58f9e09f44b3e8ca3a1ceefc43ad16a0d502138be"
+  },
+  {
+    "id": "chart-06",
+    "title": "Cluster Insights: Category Purchase + Price Bubble",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/행동인사이트.ipynb",
+    "cell": 17,
+    "output": 0,
+    "types": [
+      "heatmap",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "21add648339a38511f58581d96aed383777b1bb166b12cdef7b7c53eb3aebd78"
+  },
+  {
+    "id": "chart-07",
+    "title": "Cluster-wise Category Comparison (Radar)",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/행동인사이트.ipynb",
+    "cell": 20,
+    "output": 0,
+    "types": [
+      "scatterpolar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "f13377ec0ce139042ce3e802bfbc40974b1dfac6dbb136b68e6ece2a47218093"
+  },
+  {
+    "id": "customer-radar",
+    "title": "고객군별 상품군 소비 레이더",
+    "group": "RFM·고객 행동",
+    "source": "01.analysis/01_RFM/행동인사이트.ipynb",
+    "cell": 29,
+    "output": 0,
+    "types": [
+      "scatterpolar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "ffa59e29e4ae0e7fceb329a56785e4e6dae598f97066b2ec407f3d7b2b9a26db"
+  },
+  {
+    "id": "chart-09",
+    "title": "🏆 Olist 카테고리별 매출 구조 (Top 20)",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 10,
+    "output": 0,
+    "types": [
+      "treemap"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "6296ff5e39927a554bdc33a27de07464c41a8017e1c8ac4792d223a42d613692"
+  },
+  {
+    "id": "chart-10",
+    "title": "매출구조분석 · 차트 12",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 11,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "9cb28c866e4f1d7735e13b403da275b65d6a72974f95071062c5019062e18081"
+  },
+  {
+    "id": "chart-11",
+    "title": "📊 Olist 매출 집중도 분석 (파레토 차트)",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 12,
+    "output": 0,
+    "types": [
+      "bar",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "8a769dd83dd2dd857cefd23af41a8aa2a366c61e2777e725088b769f96ac0f66"
+  },
+  {
+    "id": "sales-treemap",
+    "title": "카테고리별 매출 트리맵",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 14,
+    "output": 0,
+    "types": [
+      "treemap"
+    ],
+    "pptPage": 8,
+    "pptContextOnly": true,
+    "sha256": "f3e9132659cb01620150de94b2446de5a964e7603d0612e4fd13ac9315a47311"
+  },
+  {
+    "id": "chart-13",
+    "title": "🎯 Olist 대분류 카테고리 구조 분석",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 24,
+    "output": 0,
+    "types": [
+      "pie"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "78519712a50f1d6f47d28713df0125db2238d79069f2af5bffda3dd52a33d8dc"
+  },
+  {
+    "id": "chart-14",
+    "title": "🌳 Olist 카테고리별 매출 트리맵",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 26,
+    "output": 1,
+    "types": [
+      "treemap"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "4d364f212bfffdb06fd14e073d91e729fdad8ce54cfe2b22237de1f57be709da"
+  },
+  {
+    "id": "chart-15",
+    "title": "📊 Olist 대분류별 매출 현황",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 27,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "487b391964c0fb2823d8f2d6dff496c855a7ba7ee5b528ae20799931222ddc45"
+  },
+  {
+    "id": "chart-16",
+    "title": "☀️ Olist 카테고리 구조 (선버스트 차트)",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 27,
+    "output": 3,
+    "types": [
+      "sunburst"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "3a43ac0b51b44ded2331e24379fdc859a5a86aee7c2c4dff778ae597f43dc2bc"
+  },
+  {
+    "id": "chart-17",
+    "title": "💰 평균 단가 Top 5",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 32,
+    "output": 0,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "37d036a8d2fe4b6003178d876e65832e4178d4ee7ed6160217f68b27c54f034b"
+  },
+  {
+    "id": "chart-18",
+    "title": "🪙 평균 단가 Bottom 5",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 32,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "1e697261c2e1cfc5e52cf1e9f158e952905318151aa6a6032a3cb28f925ca1e0"
+  },
+  {
+    "id": "sales-vs-price",
+    "title": "매출과 평균 단가",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 33,
+    "output": 0,
+    "types": [
+      "bar",
+      "scatter"
+    ],
+    "pptPage": 8,
+    "pptContextOnly": false,
+    "sha256": "e7141cdc24fdfd055c0fadd26556a200d9181f6d32c3f5902bf6a5ded78047f1"
+  },
+  {
+    "id": "category-volume",
+    "title": "카테고리별 판매수량",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 35,
+    "output": 0,
+    "types": [
+      "bar"
+    ],
+    "pptPage": 8,
+    "pptContextOnly": true,
+    "sha256": "682d8acd135235510f872da9fc8eb435c8ede0c3d9c337bc0464e2b8f006bcca"
+  },
+  {
+    "id": "chart-21",
+    "title": "📊 매출 vs 판매(수량) 비교",
+    "group": "매출·카테고리",
+    "source": "01.analysis/04_Olist/매출구조분석.ipynb",
+    "cell": 36,
+    "output": 0,
+    "types": [
+      "bar",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "d21d5d51f56d1b4634103bc959abe0a4dbe8ac40e988bd02fa12e19156674869"
+  },
+  {
+    "id": "trade-sankey",
+    "title": "지역 간 거래 흐름",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 5,
+    "output": 1,
+    "types": [
+      "sankey"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "22edd16ab2d5d97a22e382e674687d9bff450bd64894569acd55fc4717bdce56"
+  },
+  {
+    "id": "chart-23",
+    "title": "🕸️ 브라질 주간 거래 네트워크 (노드 크기 = 거래량)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 7,
+    "output": 1,
+    "types": [
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "a12dc5f479169adb19ed9207f8bfd504d8557b9e197d23cde581bbc840b81ee1"
+  },
+  {
+    "id": "chart-24",
+    "title": "📊 카테고리별 로컬 vs 원거리 거래 비율",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 9,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "92007c0d021c31927a1857e7d979335bf9af7c25531a8e692395b5733753f53b"
+  },
+  {
+    "id": "chart-25",
+    "title": "📊 상위 15개 매출 카테고리별 로컬 vs 원거리 거래 비율",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 10,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "a14f9e44a4629544eda3a1782a17becb6277dd5f3b116b41fbbe1b1d444011ef"
+  },
+  {
+    "id": "chart-26",
+    "title": "💰 상위 15개 카테고리 전체 거래 구조 총 매출: R$ 9,627,060",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 10,
+    "output": 3,
+    "types": [
+      "pie"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "4113dd93a94ba351189209ce1619e1055be3a7ae56f3e7dd62e6d2ec9616f365"
+  },
+  {
+    "id": "local-trades",
+    "title": "로컬·원거리 거래 구조",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 11,
+    "output": 1,
+    "types": [
+      "pie"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "25db1df90cf7c4b4bcffbb5349905c7522cf51be7c6b0e2001a7ebf5e92ea264"
+  },
+  {
+    "id": "chart-28",
+    "title": "상위 15개 카테고리별 로컬 vs 원거리 거래 비율",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 11,
+    "output": 3,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "d039f7d6f67939c439e49c63cd12c0cfdb44133967e295c9f44ff809e51ce83b"
+  },
+  {
+    "id": "chart-29",
+    "title": "브라질 지역간 거래 네트워크",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 11,
+    "output": 5,
+    "types": [
+      "scattergeo"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "1e8689e8163b0a07c750bcd9f08e78c9a72978b706b3c309ad1a2910e2735a7e"
+  },
+  {
+    "id": "chart-30",
+    "title": "🏠 상위 10개 지역 로컬 거래 현황 (실제 거래 기준)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 12,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "e14844e3668460ad5a64c3fe0355658d52ff88c74ad8497399896ec820b0eed7"
+  },
+  {
+    "id": "chart-31",
+    "title": "🔄 지역별 로컬 거래 규모 vs 자급률 (버블 크기 = 거래 건수)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 12,
+    "output": 3,
+    "types": [
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "57773e18927f7dfdaf0229ae0b86db396558f2e07cd6154f3450ac150697b9af"
+  },
+  {
+    "id": "chart-32",
+    "title": "🏭 상위 15개 카테고리별 Seller 지역 분포",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 13,
+    "output": 1,
+    "types": [
+      "pie"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "25d5c61982ab6d84208f8920c9851b95dad62cd665233aaeb40e5b5d76d79982"
+  },
+  {
+    "id": "chart-33",
+    "title": "🚛 상위 15개 카테고리별 배송비 분석",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 13,
+    "output": 3,
+    "types": [
+      "bar",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "71149ef77fd568903f8a53a6bd2d6362c60f4e067cc7a7544b66293de8a80682"
+  },
+  {
+    "id": "chart-34",
+    "title": "💰 로컬 vs 원거리 배송비 비교 (카테고리별)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 13,
+    "output": 5,
+    "types": [
+      "bar",
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "d59473c21358a5584ca87ea018f030a8623e2e8b15b214b8c8e135b98347a008"
+  },
+  {
+    "id": "chart-35",
+    "title": "지역별 셀러 분포   SP가 전체의 72.3% 차지",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 14,
+    "output": 1,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "3ea612a2bb3175abd313cde4bde7137ace996e0397d136cc06984c7c90696e91"
+  },
+  {
+    "id": "seller-network",
+    "title": "판매자–고객 지역 네트워크",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/seller_customer.ipynb",
+    "cell": 16,
+    "output": 0,
+    "types": [
+      "scattergeo"
+    ],
+    "pptPage": 9,
+    "pptContextOnly": false,
+    "sha256": "08ae3d503fd6389d9598f1fc6206c96f92f54809a53b7ff5358bed0d945dd96e"
+  },
+  {
+    "id": "chart-37",
+    "title": "🚛 거리 대비 무게당 배송비 (색: 배송 지연)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 5,
+    "output": 0,
+    "types": [
+      "scattergl"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "529ef44a4b5729a358414c2080b3528745ba0a6ec3da735db3df89ebaeef1088"
+  },
+  {
+    "id": "shipping-heatmap",
+    "title": "지역·카테고리 배송비 효율성",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 6,
+    "output": 1,
+    "types": [
+      "heatmap"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "c77ba4dfac4148afed6188b35c0812854a3357ad6f939357388d90578c68cb24"
+  },
+  {
+    "id": "chart-39",
+    "title": "🚚 거리 구간별 배송비 효율성 (R$/km)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 7,
+    "output": 0,
+    "types": [
+      "box"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "d77d7e9ebadd505b3d3b03fd659a8158a417ae334ddb99679dc9f8a6b01aeb19"
+  },
+  {
+    "id": "chart-40",
+    "title": "📦 카테고리별 평균 배송비 비율",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 8,
+    "output": 0,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "87fc8422c5e4924f1d845f4377fd70953b311c60b8eff5ea14506ab420ef0ce6"
+  },
+  {
+    "id": "chart-41",
+    "title": "⚖️ 무게-부피 효율성 분포 (색: 배송비/부피)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 9,
+    "output": 0,
+    "types": [
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "ad9c6e39b4e14cf8679aa7d3c17495c787a86346358a4562e58bc760e6b5a6d8"
+  },
+  {
+    "id": "chart-42",
+    "title": "📍 지역별 배송 최적화 기회 (배송비 비율 높은 상위 8개)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송비.ipynb",
+    "cell": 10,
+    "output": 0,
+    "types": [
+      "bar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "89a42b563a611b17c9182d81580e908801b9125251ac0e7d8d4d30a3909d265f"
+  },
+  {
+    "id": "delivery-surface",
+    "title": "거리·주문가치별 배송 지연률",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 7,
+    "output": 1,
+    "types": [
+      "surface"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "af82b54f778f807b4de3720978d1fecb4413062077a5bb5cfe51028ce9c36f2e"
+  },
+  {
+    "id": "delivery-map",
+    "title": "지역별 배송 성능",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 8,
+    "output": 1,
+    "types": [
+      "scattergeo"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "2295dae3ef990dc7c03c1d06f87065eccf8836b345f1c2108c662ea24800b599"
+  },
+  {
+    "id": "chart-45",
+    "title": "📦 거리 vs 배송일 히트맵",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 9,
+    "output": 0,
+    "types": [
+      "heatmap"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "aca6b1b1cc4a29a425f8df931c13eac3959685825c37f966549583000b3b92ff"
+  },
+  {
+    "id": "chart-46",
+    "title": "⏱️ 지연률 분포 (거리 구간별)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 11,
+    "output": 0,
+    "types": [
+      "violin"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "18b6a19160dfe2785202dc9aaa7fc23ea0e15e770f551981a2132ac37aed7a8b"
+  },
+  {
+    "id": "chart-47",
+    "title": "🚚 배송비 효율성 (거리 대비)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 13,
+    "output": 0,
+    "types": [
+      "scatter"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "698313e367a32e850222c2c79ccb89565cfb20c2b605c68b3775ea50429e98f1"
+  },
+  {
+    "id": "chart-48",
+    "title": "📍 배송 성능 요약 레이더 (수동 정규화)",
+    "group": "지역·배송",
+    "source": "01.analysis/05_region/배송성능.ipynb",
+    "cell": 15,
+    "output": 0,
+    "types": [
+      "scatterpolar"
+    ],
+    "pptPage": null,
+    "pptContextOnly": false,
+    "sha256": "91369a1c8f4c4c78f140443ecb7e1ffbb253e77abc43c013829b352da1aa749d"
+  }
+]

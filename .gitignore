@@ -1,1 +1,16 @@
 data/
+
+# Private portfolio draft (kept locally).
+docs/PORTFOLIO.md
+
+# Customer-level analysis exports are prepared locally.
+01.analysis/06_Review/*.csv
+
+# Local environments and notebook caches.
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/

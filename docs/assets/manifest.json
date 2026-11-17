@@ -1,0 +1,17 @@
+{
+  "sales-treemap.png": "01.analysis/04_Olist/category_tree.png",
+  "sales-vs-price.png": "01.analysis/04_Olist/매출vs평균단가.png",
+  "category-volume.png": "01.analysis/04_Olist/category_count.png",
+  "seller-network.png": "01.analysis/05_region/network.png",
+  "local-trades.png": "01.analysis/05_region/local.png",
+  "customer-lifecycle.png": "01.analysis/04_Olist/customer_lifecycle_larger_font.png",
+  "review-mismatch-wordcloud.png": "01.analysis/06_Review/mismatch_wordcloud.png",
+  "review-factors.png": "01.analysis/06_Review/weight_comparison_chart.png",
+  "review-factor-gap.png": "01.analysis/06_Review/enhanced_sorted_difference.png",
+  "clv-gap.png": "01.analysis/06_Review/clv_gap_analysis_transparent.png",
+  "lead-channels.png": "01.analysis/07_Marketing/channel_donut.png",
+  "seller-funnel.png": "01.analysis/07_Marketing/final_funnel_chart.png",
+  "review-positive-wordcloud.png": "01.analysis/06_Review/positive_wordcloud.png",
+  "review-neutral-wordcloud.png": "01.analysis/06_Review/neutral_wordcloud.png",
+  "review-negative-wordcloud.png": "01.analysis/06_Review/negative_wordcloud.png"
+}

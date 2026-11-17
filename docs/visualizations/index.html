@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olist · Plotly 시각화 원본</title>
+  <style>
+    :root{color-scheme:light;--navy:#183d75;--ink:#172b46;--muted:#60718a;--orange:#efad7f;--line:#dce3ed;--paper:#f4f6fa}
+    *{box-sizing:border-box}body{margin:0;font-family:"Pretendard","Malgun Gothic",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+    header{padding:28px 36px 24px;background:var(--navy);color:white;display:flex;justify-content:space-between;align-items:center;gap:24px}header small{color:#f6c49e;letter-spacing:.1em;font-size:12px;font-weight:700}h1{font-size:26px;letter-spacing:-.04em;margin:8px 0 10px}header p{font-size:13px;line-height:1.7;color:#e2e9f4;margin:0}header a{color:white;text-underline-offset:4px;font-size:13px;white-space:nowrap}
+    .workspace{display:grid;grid-template-columns:300px minmax(0,1fr);max-width:1920px;margin:auto;min-height:calc(100vh - 160px)}
+    aside{background:white;padding:22px 16px;border-right:1px solid var(--line)}.count{font-size:12px;color:var(--muted);margin:0 0 14px 4px}.filters{display:grid;gap:10px;margin-bottom:18px}input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink);font:inherit;font-size:13px}input:focus,select:focus{outline:2px solid #a6c5f1;outline-offset:2px}
+    nav{display:grid;gap:7px;max-height:calc(100vh - 320px);overflow:auto;padding-right:4px}.chart-button{border:1px solid transparent;border-radius:8px;text-align:left;padding:12px;background:white;color:var(--ink);cursor:pointer;font:inherit;font-size:13px;line-height:1.5}.chart-button:hover{background:#f0f4fa}.chart-button[aria-current=true]{background:#eaf0f9;border-color:#cad8eb;box-shadow:inset 3px 0 var(--orange)}.chart-button small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.empty{font-size:13px;line-height:1.8;color:var(--muted)}
+    main{min-width:0;padding:24px 28px}.chart-header{display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:16px}h2{font-size:20px;letter-spacing:-.03em;line-height:1.5;margin:0}.meta{font-size:12px;color:var(--muted);line-height:1.8;margin:8px 0 0}.meta a{color:var(--navy)}.badge{background:#f9e8db;padding:6px 10px;border-radius:20px;font-size:11px;color:#8a4e27;white-space:nowrap}
+    .chart-card{position:relative;min-height:560px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:white;box-shadow:0 6px 24px #1b3a6510}#chart{width:100%;height:650px}.status{padding:15px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:#fbfcfe;line-height:1.7}.status.error{color:#a12736}.notes{font-size:12px;color:var(--muted);line-height:1.9;padding:14px 2px}.notes a{color:var(--navy)}button:focus-visible,a:focus-visible{outline:2px solid #2e6dc3;outline-offset:3px}
+    @media(min-width:1600px){#chart{height:740px}}
+    @media(max-width:900px){header{padding:24px;align-items:start}header a{font-size:12px}.workspace{grid-template-columns:230px minmax(0,1fr)}main{padding:20px 16px}h1{font-size:23px}#chart{height:580px}.badge{display:none}}
+    @media(max-width:640px){header{display:block;padding:22px 18px}header a{display:inline-block;margin-top:12px}.workspace{display:block}aside{padding:16px;border-right:0;border-bottom:1px solid var(--line)}.filters{grid-template-columns:1fr 1fr;margin-bottom:12px}nav{max-height:164px;grid-template-columns:1fr 1fr}.chart-button{font-size:12px;padding:9px}.count{margin-bottom:10px}main{padding:18px 10px}h2{font-size:17px}.chart-header{padding:0 6px}.chart-card{min-height:460px}#chart{height:520px}.notes{padding:12px 6px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div><small>BRAZILIAN E-COMMERCE BY OLIST</small><h1>Plotly 시각화 원본</h1><p>직접 구성한 차트를 선택해 확대·이동하고, 범례와 마우스 오버로 세부 값을 살펴보세요.</p></div>
+    <a href="../VISUALIZATIONS.md">발표 시각화·설계 설명 ↗</a>
+  </header>
+  <div class="workspace">
+    <aside aria-label="차트 선택">
+      <p class="count" id="count">원본 차트를 불러오는 중입니다.</p>
+      <div class="filters"><input id="search" type="search" placeholder="차트 검색" aria-label="차트 제목·유형 검색"><select id="group" aria-label="분석 영역"><option value="">전체 분석</option></select></div>
+      <nav id="list" aria-label="저장된 Plotly 차트"></nav>
+    </aside>
+    <main>
+      <div class="chart-header"><div><h2 id="title">차트를 준비하고 있습니다.</h2><p class="meta" id="meta"></p></div><span class="badge" id="badge">저장된 원본 출력</span></div>
+      <div class="chart-card"><div id="chart" aria-label="선택한 인터랙티브 차트"></div><div class="status" id="status" role="status" aria-live="polite">원본 데이터와 디자인을 불러오는 중입니다.</div></div>
+      <div class="notes">노트북에 저장된 Plotly 출력 48개를 보존했습니다. 창 크기에 맞춰 표시 크기를 조정하고, 모바일에서는 제목을 차트 위에 따로 표시합니다. 색상·수치는 원본을 사용합니다. 과거 집계와 시나리오의 해석은 <a href="../METRICS_AND_LIMITATIONS.md">지표 근거 문서</a>를 참고하세요. PPT에 사용한 Matplotlib·워드클라우드·퍼널 이미지는 <a href="../VISUALIZATIONS.md">발표 시각화 문서</a>에 함께 있습니다.</div>
+    </main>
+  </div>
+  <script src="vendor/plotly.min.js"></script>
+  <script src="vendor/topology.js"></script>
+  <script src="figures.js"></script>
+  <script>
+    'use strict';
+    const bundle=window.OLIST_GALLERY;
+    const list=document.getElementById('list'),search=document.getElementById('search'),group=document.getElementById('group'),chart=document.getElementById('chart'),status=document.getElementById('status');
+    let selected='',renderSequence=0;
+    const chartHash=()=>decodeURIComponent(location.hash.slice(1));
+    function renderList(){
+      list.replaceChildren();
+      const term=search.value.toLowerCase();
+      const filtered=bundle.charts.filter(item=>(!group.value||item.group===group.value)&&[item.title,item.source,...item.types].join(' ').toLowerCase().includes(term));
+      document.getElementById('count').textContent=`전체 ${bundle.charts.length}개 · 현재 ${filtered.length}개`;
+      for(const item of filtered){
+        const button=document.createElement('button');button.type='button';button.className='chart-button';button.dataset.id=item.id;button.setAttribute('aria-current',String(item.id===selected));
+        const title=document.createElement('span');title.textContent=item.title;const detail=document.createElement('small');detail.textContent=`${item.group} · ${item.types.join(' / ')}${item.pptPage?' · PPT '+item.pptPage+'쪽'+(item.pptContextOnly?' 관련':''):''}`;
+        button.append(title,detail);button.addEventListener('click',()=>{location.hash=item.id;});list.append(button);
+      }
+      if(!filtered.length){const message=document.createElement('p');message.className='empty';message.textContent='검색어에 해당하는 차트가 없습니다.';list.append(message);}
+    }
+    async function openChart(id){
+      const item=bundle.charts.find(entry=>entry.id===id)||bundle.charts.find(entry=>entry.id==='sales-treemap')||bundle.charts[0];
+      if(selected===item.id)return;
+      const sequence=++renderSequence;selected=item.id;renderList();document.getElementById('title').textContent=item.title;
+      const meta=document.getElementById('meta');meta.replaceChildren();const link=document.createElement('a');link.href='../../'+item.source;link.textContent=item.source;meta.append(link,document.createTextNode(` · 셀 ${item.cell} / 출력 ${item.output} (0부터)${item.pptPage?' · PPT '+item.pptPage+'쪽'+(item.pptContextOnly?' 관련':''):''}`));
+      status.className='status';status.textContent='원본 차트를 불러오는 중입니다.';chart.dataset.chartId=item.id;chart.dataset.ready='false';
+      try{
+        if(!window.Plotly)throw Error('Plotly.js 파일을 확인해주세요.');
+        if(!('DecompressionStream' in window))throw Error('압축 해제를 지원하는 최신 Chrome 또는 Edge에서 열어주세요.');
+        const binary=Uint8Array.from(atob(bundle.payloads[item.id]),value=>value.charCodeAt(0));
+        const stream=new Blob([binary]).stream().pipeThrough(new DecompressionStream('gzip'));
+        const figure=JSON.parse(await new Response(stream).text());
+        if(sequence!==renderSequence)return;
+        const layout=figure.layout||{};delete layout.width;delete layout.height;layout.autosize=true;
+        if(innerWidth<=640)layout.title={text:''};
+        // Serialize Plotly operations when selections change during a render.
+        window.olistRenderQueue=(window.olistRenderQueue||Promise.resolve()).catch(()=>{}).then(async()=>{
+          if(sequence!==renderSequence)return;
+          Plotly.purge(chart);
+          await Plotly.newPlot(chart,figure.data,layout,{responsive:true,displaylogo:false,toImageButtonOptions:{format:'png',filename:item.id,scale:2}});
+          if(sequence!==renderSequence)return;
+          chart.dataset.ready='true';status.textContent='마우스 오버로 값 확인 · 범례 클릭으로 비교 항목 선택 · 드래그로 확대·회전 · 도구 모음에서 이미지 저장';
+        });
+        await window.olistRenderQueue;
+      }catch(error){if(sequence===renderSequence){chart.dataset.ready='error';status.className='status error';status.textContent=error.message;}}
+    }
+    if(bundle){
+      for(const name of new Set(bundle.charts.map(item=>item.group))){const option=document.createElement('option');option.value=name;option.textContent=name;group.append(option);}
+      search.addEventListener('input',renderList);group.addEventListener('change',renderList);window.addEventListener('hashchange',()=>openChart(chartHash()));
+      openChart(chartHash());
+    }else{status.className='status error';status.textContent='figures.js 파일을 찾을 수 없습니다. 갤러리 폴더 전체를 함께 열어주세요.';}
+  </script>
+</body>
+</html>
